@@ -1,0 +1,173 @@
+html {
+    background-image: linear-gradient(#002f6d, #9d33bb);
+    height: 100vh;
+    margin: 0vh;
+}
+
+body {
+    background-image: linear-gradient(#002f6d, #9d33bb);
+    height: 100vh;
+    margin: 0vh;
+}
+
+header {
+    height: 10vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-bottom-left-radius: 8vh;
+    display: flex;
+
+}
+
+.logo {
+
+    width: 20vh;
+    margin: -5vh -2vh -4vh 5vh;
+}
+
+.cuprins {
+    margin: 0;
+    padding: 0;
+    margin: auto;
+    display: flex;
+    list-style-type: none;
+}
+
+li a {
+    font-size: 3.5vh;
+    color: white;
+    margin-left: 13vh;
+    margin-right: 13vh;
+
+    text-decoration: none;
+
+}
+
+.animatieCool::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 0.3vh;
+    bottom: 0;
+    left: 0;
+    background-color: #b643df;
+    transition: transform 0.25s ease-out;
+}
+
+.animatieCool::after {
+    transform-origin: bottom right;
+}
+
+.animatieCool:hover::after {
+    transform-origin: bottom left;
+    transform: scaleX(1);
+}
+
+.animatieCool:hover {
+    color: #b643df;
+
+}
+
+.animatieCool {
+    display: inline-block;
+    position: relative;
+}
+
+.pozaCool {
+    margin-top: 10vh;
+    overflow: hidden;
+    height: 55vh;
+    width: 100%;
+    clip-path: polygon(100% 100%, 0% 100%, 0.00% 10.09%, 2.00% 10.01%, 4.00% 9.78%, 6.00% 9.41%, 8.00% 8.91%, 10.00% 8.29%, 12.00% 7.59%, 14.00% 6.82%, 16.00% 6.01%, 18.00% 5.19%, 20.00% 4.40%, 22.00% 3.64%, 24.00% 2.97%, 26.00% 2.39%, 28.00% 1.93%, 30.00% 1.60%, 32.00% 1.43%, 34.00% 1.40%, 36.00% 1.53%, 38.00% 1.81%, 40.00% 2.22%, 42.00% 2.76%, 44.00% 3.41%, 46.00% 4.14%, 48.00% 4.92%, 50.00% 5.74%, 52.00% 6.55%, 54.00% 7.34%, 56.00% 8.07%, 58.00% 8.72%, 60.00% 9.26%, 62.00% 9.67%, 64.00% 9.95%, 66.00% 10.08%, 68.00% 10.05%, 70.00% 9.87%, 72.00% 9.55%, 74.00% 9.09%, 76.00% 8.51%, 78.00% 7.83%, 80.00% 7.08%, 82.00% 6.28%, 84.00% 5.47%, 86.00% 4.66%, 88.00% 3.89%, 90.00% 3.18%, 92.00% 2.57%, 94.00% 2.07%, 96.00% 1.70%, 98.00% 1.47%, 100.00% 1.39%);
+}
+
+.titlu {
+    margin-top: 5vh;
+    text-align: center;
+}
+
+h1 {
+    font-size: 5vh;
+    font-family: cursive;
+    color: white;
+}
+
+h2 {
+    font-family: monospace;
+    color: white;
+    font-size: 3vh;
+}
+
+footer {
+    display: flex;
+    margin: auto;
+}
+
+h3 {
+    margin: auto;
+    color: white;
+    font-size: 2vh;
+}
+
+ul li {
+    display: inline-block;
+    position: relative;
+    margin: auto;
+}
+
+.casutaSpeciala {
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+}
+
+.cuprins {
+    height: 100%;
+}
+
+ul li a {
+    display: block;
+    text-align: center;
+}
+
+ul li ul.dropDown li {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.dropDown a {
+    font-size: 2vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+.dropDown {
+    margin-top: 3vh;
+    padding-top: 3vh;
+}
+
+ul li ul.dropDown {
+    width: 100%;
+    padding: 0;
+    position: absolute;
+    display: none;
+}
+
+
+
+ul li:hover ul.dropDown {
+    display: block;
+}
+
+.dropDown li:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.dropDown li:hover a {
+    color: black;
+    font-weight: bold;
+}
+
+.casutaSpeciala:hover {
+    cursor: pointer;
+}
