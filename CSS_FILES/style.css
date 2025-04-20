@@ -32,12 +32,19 @@ header {
     list-style-type: none;
 }
 
-li a {
+.animatieCool {
     font-size: 3.5vh;
     color: white;
     margin-left: 13vh;
     margin-right: 13vh;
 
+    text-decoration: none;
+
+}
+
+li a {
+    font-size: 3.5vh;
+    color: white;
     text-decoration: none;
 
 }
