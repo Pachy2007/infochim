@@ -1,12 +1,16 @@
 html {
     background-image: linear-gradient(#002f6d, #9d33bb);
-    height: 100vh;
+    background-size: 100% 100%;
+    min-height: 100vh;
+    background-repeat: no-repeat;
     margin: 0vh;
 }
 
 body {
     background-image: linear-gradient(#002f6d, #9d33bb);
-    height: 100vh;
+    background-size: 100% 100%;
+    min-height: 100vh;
+    background-repeat: no-repeat;
     margin: 0vh;
 }
 
@@ -42,7 +46,7 @@ header {
 
 }
 
-li a {
+.linkSus {
     font-size: 3.5vh;
     color: white;
     text-decoration: none;
@@ -93,7 +97,7 @@ li a {
     text-align: center;
 }
 
-h1 {
+.titluSus {
     font-size: 5vh;
     font-family: cursive;
     color: white;
@@ -112,7 +116,7 @@ footer {
 
 h3 {
     margin: auto;
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 2vh;
 }
 
@@ -171,10 +175,173 @@ ul li:hover ul.dropDown {
 }
 
 .dropDown li:hover a {
-    color: black;
     font-weight: bold;
 }
 
 .casutaSpeciala:hover {
     cursor: pointer;
+}
+
+.slide {
+    width: 40vh;
+    height: max-content;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: 0.5s ease;
+    transform: translateX(-40vh);
+
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #000000;
+    text-align: center;
+}
+
+.slide ul {
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+
+.slide li {
+
+    display: block;
+
+}
+
+.slide li a {
+
+    display: block;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+
+}
+
+.slide li a:hover {
+
+    background-color: rgba(255, 255, 255, 0.5);
+
+}
+
+.lectie {
+    margin-bottom: 3vh;
+    margin-left: 8vh;
+    margin-right: 5vh;
+    background-color: white;
+    flex-grow: 1;
+
+}
+
+input {
+    display: none;
+    visibility: hidden;
+    -webkit-appearance: none;
+
+}
+
+.toggle {
+    position: absolute;
+    height: 3vh;
+    width: 3vh;
+    background-color: #b643df;
+    cursor: pointer;
+    border-radius: 1vh;
+    top: 11vh;
+    left: 1vh;
+    background-color: white;
+    box-shadow: 0 0 3vh rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.toggle .common {
+    position: absolute;
+    height: 0.2vh;
+    width: 2.2vh;
+    background-color: #b643df;
+    border-radius: 2vh;
+    transition: 0.3s ease;
+}
+
+.toggle .top_line {
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.toggle .middle_line {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.toggle .bottom_line {
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+input:checked~.toggle .top_line {
+    left: 0.45vh;
+    top: 1.5vh;
+    width: 2.2vh;
+    transform: rotate(45deg);
+}
+
+input:checked~.toggle .bottom_line {
+    left: 0.45vh;
+    top: 1.5vh;
+    width: 2.2vh;
+    transform: rotate(-45deg);
+}
+
+input:checked~.toggle .middle_line {
+    opacity: 0;
+    transform: translateX(20px);
+}
+
+input:checked~.slide {
+    transform: translateX(0);
+
+}
+
+.titluCuprins {
+    font-size: 4vh;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 2vh;
+    color: white;
+    text-align: center;
+}
+
+.slide a {
+    text-decoration: none;
+    color: white;
+    font-size: 2vh;
+    text-align: center;
+
+}
+
+.slide li {
+    text-align: center;
+}
+
+ul li:hover .dropDown1 {
+    display: block;
+}
+
+.dropDown1 ul {
+    width: 30vh;
+}
+
+.dropDown1 {
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 40vh;
+
 }
