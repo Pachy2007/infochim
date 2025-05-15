@@ -31,6 +31,7 @@ header {
 .cuprins {
     margin: 0;
     padding: 0;
+    padding-right: 20vh;
     margin: auto;
     display: flex;
     list-style-type: none;
@@ -109,6 +110,12 @@ h2 {
     font-size: 3vh;
 }
 
+.lectie h2 {
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-size: 5vh;
+}
+
 footer {
     display: flex;
     margin: auto;
@@ -171,7 +178,7 @@ ul li:hover ul.dropDown {
 }
 
 .dropDown li:hover {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(56, 50, 50, 0.5);
 }
 
 .dropDown li:hover a {
@@ -228,12 +235,15 @@ footer {
 }
 
 .lectie {
+    padding-left: 4.01vh;
+    padding-right: 4.01vh;
     margin-bottom: 3vh;
-    margin-left: 8vh;
-    margin-right: 5vh;
-    background-color: white;
+    margin-left: 13vh;
+    margin-right: 13vh;
+    border-radius: 4vh;
+    background-color: rgb(255, 255, 255);
     flex-grow: 1;
-
+    padding-bottom: 4vh;
 }
 
 input {
@@ -252,7 +262,7 @@ input {
     border-radius: 1vh;
     top: 11vh;
     left: 1vh;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     box-shadow: 0 0 3vh rgba(0, 0, 0, 0.3);
     z-index: 1;
 }
@@ -344,4 +354,208 @@ ul li:hover .dropDown1 {
     top: 0;
     left: 40vh;
 
+}
+
+p {
+    font-size: 3vh;
+    text-indent: 4vh;
+    word-spacing: 1vh;
+    line-height: 4.5vh;
+
+}
+
+.lectie h3 {
+    font-size: 3vh;
+    font-weight: bold;
+    color: rgb(157, 51, 187);
+}
+
+.lectie li {
+    font-size: 3vh;
+    word-spacing: 1vh;
+    line-height: 4.5vh;
+
+}
+
+.lectie h1 {
+    font-size: 8vh;
+    text-align: center;
+}
+
+.lectie a {
+    font-size: 3vh;
+    word-spacing: 1vh;
+    line-height: 4.5vh;
+}
+
+.lectie hr {
+    background-color: rgb(157, 51, 187);
+    font-weight: 100;
+
+}
+
+.split-para {
+    display: block;
+    margin: 10px;
+}
+
+.split-para span {
+    display: block;
+    float: right;
+    margin-left: 1vh;
+}
+
+.prev_next {
+    margin-top: 6vh;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    text-align: center;
+}
+
+.prev {
+    margin-left: 10vh;
+    width: 50vh;
+    height: 12vh;
+    background-color: rgb(167, 74, 162);
+    ;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-decoration: none;
+    border-width: 0;
+    border-radius: 10vh;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+
+.next {
+    margin-right: 10vh;
+    width: 50vh;
+    height: 12vh;
+    background-color: rgb(167, 74, 162);
+    ;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-decoration: none;
+    border-width: 0;
+    border-radius: 10vh;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+
+.prev_next a {
+    text-decoration: none;
+    font-size: 2.5vh;
+}
+
+.prev_next p {
+    text-indent: 0;
+    text-align: center;
+    margin: 0;
+    font-weight: lighter;
+    font-size: 2.5vh;
+}
+
+.prev:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(228, 94, 181);
+}
+
+.next:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(228, 94, 181);
+}
+
+b {
+    font-size: 2vh;
+}
+
+.test {
+    margin-top: 5vh;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+
+}
+
+.test p {
+    text-indent: 0;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    border-radius: 2vh;
+    color: white;
+    background-color: rgb(149, 143, 227);
+    margin: auto;
+    display: inline-block;
+}
+
+.test a {
+    text-decoration: none;
+    text-indent: 0;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    border-radius: 2vh;
+    color: white;
+    background-color: rgb(149, 143, 227);
+    margin: auto;
+    display: inline-block;
+    transition: 1s;
+    word-spacing: 0.1vh;
+}
+
+.test a:hover {
+    background-color: rgb(97, 129, 232);
+    color: #000000;
+}
+
+.quiz-header ul li {
+    display: list-item;
+    margin-left: 20vh;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+
+}
+
+.quiz-header ul {
+    list-style-type: none;
+}
+
+.quiz-header input {
+    display: initial;
+    visibility: visible;
+    appearance: auto;
+
+}
+
+.quiz-header h2 {
+    text-align: center;
+}
+
+button {
+    background: rgb(65, 47, 74);
+    color: white;
+    border: none;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    font-size: 3vh;
+    padding: 2vh;
+    border-radius: 5vh;
+    margin: 0;
+}
+
+button:hover {
+    background-color: #ae7ebf;
+}
+
+.quiz-header h2 {
+    font-size: 3.5vh;
+}
+
+label {
+    font-size: 3vh;
 }
